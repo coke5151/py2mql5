@@ -1,3 +1,13 @@
+<h1 align="center">
+    <img src="" alt="Py2MQL5 banner">
+</h1>
+
+<div align="center">
+  <a href="https://pypi.org/project/py2mql5/">
+    <img src="https://img.shields.io/pypi/v/py2mql5.svg" alt="PyPi Latest Release"/>
+  </a>
+</div>
+
 # Py2MQL5
 A wrapper of [MetaTrader5 official package](https://pypi.org/project/MetaTrader5/) that enables multiple terminal instances at the same time.
 
