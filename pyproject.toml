@@ -1,10 +1,24 @@
 [project]
-name = "python-project-template"
+name = "py2mql5"
 version = "0.1.0"
+description = "A wrapper of MetaTrader5 official package that enables multiple terminal instances at the same time."
+authors = [{ name = "pytree", email = "houjunqimail@gmail.com" }]
+dependencies = ["MetaTrader5>=5.0.4803"]
+requires-python = ">=3.13"
+readme = "README.md"
+license = { text = "MIT" }
+
+[dependency-groups]
+dev = [
+    "mypy>=1.14.1",
+    "ruff>=0.9.4",
+    "jupyterlab>=4.3.5",
+    "python-dotenv>=1.0.1",
+]
 
 [tool.pyright]
 exclude = [".venv", "venv"]
-ignore = []                 # ignore package
+ignore = [".venv", "venv"]
 
 [tool.ruff]
 line-length = 120
@@ -46,6 +60,13 @@ force_union_syntax = true
 exclude = [".venv", "venv", "dist", "build"]
 
 [tool.pdm]
-distribution = false
+distribution = true
 [tool.pdm.scripts]
 main = "python src/main.py"
+
+[tool.pdm.build]
+excludes = ["tests/"]
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"

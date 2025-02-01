@@ -207,3 +207,6 @@ pyrightconfig.json
 
 # ignore local environment path information of PDM
 .pdm-python
+
+# ignore local files
+local/
