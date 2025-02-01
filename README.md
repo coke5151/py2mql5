@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="" alt="Py2MQL5 banner">
+    <img src="https://raw.githubusercontent.com/coke5151/py2mql5/ecf0008423672603f08dd4e47445265a9551eee2/assets/github_banner.svg" alt="Py2MQL5 banner">
 </h1>
 
 <div align="center">
